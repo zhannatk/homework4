@@ -15,7 +15,7 @@ public class Main {
         byte cap = 2;
         short dog = 23445;
         long map = 989987689979L;
-        float km = 2.846F;
+        float km = 2.846f;
         double kg = 6.76789;
         System.out.println("Значение переменной с типом int равно " + apple);
         System.out.println("Значение переменной с типом byte равно " + cap);
@@ -124,21 +124,22 @@ public class Main {
 
     }
     public static void task7() {
-         byte increase = 10%;
+        float increase =  0.10f;
          byte monthYear = 12;
          int masha = 67760;
-         int denis = 83690;
-         int kris = 76230;
-         int yearSalary = masha * monthYear;
-         int increaseM =  ;
-         int differenceM = ;
-         System.out.println("Маша теперь получает " + + " рублей. Годовой доход вырос на " +  + " рублей");
-         int increaseD = ;
-         int differenceD = ;
-        System.out.println("Денис теперь получает " + + " рублей. Годовой доход вырос на " +  + " рублей");
-         int increaseK = ;
-         int differenceK = ;
-        System.out.println("Кристина теперь получает " + + " рублей. Годовой доход вырос на " +  + " рублей");
+
+
+        float increaceM = (float) (masha * monthYear * increase);
+         float differenceM = (float) (increaceM / increase);
+         System.out.println("Маша теперь получает " + differenceM + " рублей. Годовой доход вырос на " + increaceM + " рублей");
+        int denis = 83690;
+       float increaseD = denis * monthYear * increase;
+         float differenceD = (float) (increaseD / increase);
+        System.out.println("Денис теперь получает " + differenceD + " рублей. Годовой доход вырос на " + increaseD + " рублей");
+        int kris = 76230;
+        float increaseK = (float) (kris * monthYear * increase);
+         float differenceK = (float) (increaseK / increase);
+        System.out.println("Кристина теперь получает " + differenceK + " рублей. Годовой доход вырос на " + increaseK + " рублей");
 
 
     }
