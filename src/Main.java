@@ -11,12 +11,20 @@ public class Main {
     }
 
     private static void task0() {
-        int apple;
-        byte cap;
-        short dog;
-        long map;
-        float km;
-        double kg;
+        int apple = 23234532;
+        byte cap = 2;
+        short dog = 23445;
+        long map = 989987689979L;
+        float km = 2.846F;
+        double kg = 6.76789;
+        System.out.println("Значение переменной с типом int равно " + apple);
+        System.out.println("Значение переменной с типом byte равно " + cap);
+        System.out.println("Значение переменной с типом short равно " + dog);
+        System.out.println("Значение переменной с типом long  равно " + map);
+        System.out.println("Значение переменной с типом float равно " + km);
+        System.out.println("Значение переменной с типом double равно " + kg);
+
+
 
     }
 
@@ -71,16 +79,67 @@ public class Main {
 
     }
     public static void task4() {
-
+         byte colors = 120;
+         byte white = 2;
+         byte brown = 4;
+         byte cabinet = (byte) ((byte) colors / (white + brown));
+         byte whitePic = (byte) (cabinet * white);
+         byte brownPic = (byte) (cabinet * brown);
+        System.out.println("В школе, где " + cabinet + " классов, нужно " + whitePic + " банок белой краски и " + brownPic + " банок коричневой краски");
 
     }
     public static void task5() {
+        byte banana = 5;
+        byte bananaWeight = 80;
+        short bananas = (short) (bananaWeight * banana);
+
+        byte milkMl = 2;
+        byte milkG = 105;
+        short milkWeight = (short) (milkG * milkMl);
+
+        byte iceCream = 2;
+        byte iceCreamWeight = 100;
+        short iceCreamG = (short) (iceCream * iceCreamWeight);
+
+        byte egg = 4;
+        byte eggWeight = 70;
+        short eggs = (short) (egg * eggWeight);
+
+        short totalG = (short) (bananas + milkWeight + iceCreamG + eggs);
+        short grPerKg = 1000;
+        float totalKg = (float) (totalG / grPerKg);
+        System.out.println("Колличетво грамм " + totalG + ", а киллограмм " + totalKg );
 
     }
     public static void task6() {
+        byte loseKg = 7;
+        short grInKg = 1000;
+        short loseFrom = 250;
+        short loseTo = 500;
+        short dayFrom = (short) (loseKg * grInKg / loseFrom);
+        short dayTo = (short) (loseKg * grInKg / loseTo);
+        System.out.println("При потере " + loseFrom + " гр в день, потребуется " + dayFrom + " дней, а при " + loseTo + " гр, вес уйдет за " + dayTo + " дней."
+        );
+
 
     }
     public static void task7() {
+         byte increase = 10%;
+         byte monthYear = 12;
+         int masha = 67760;
+         int denis = 83690;
+         int kris = 76230;
+         int yearSalary = masha * monthYear;
+         int increaseM =  ;
+         int differenceM = ;
+         System.out.println("Маша теперь получает " + + " рублей. Годовой доход вырос на " +  + " рублей");
+         int increaseD = ;
+         int differenceD = ;
+        System.out.println("Денис теперь получает " + + " рублей. Годовой доход вырос на " +  + " рублей");
+         int increaseK = ;
+         int differenceK = ;
+        System.out.println("Кристина теперь получает " + + " рублей. Годовой доход вырос на " +  + " рублей");
+
 
     }
 }
