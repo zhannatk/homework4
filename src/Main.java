@@ -54,7 +54,7 @@ public class Main {
         byte bottle = 16;
         byte perfomance = (byte) ((byte) bottle / production);
         byte minuteInHour = 60;
-        short inDayHour = 24;
+        byte inDayHour = 24;
         byte dayInMonth = 30;
 
         byte inMinute = 20;
@@ -66,7 +66,7 @@ public class Main {
         short perDay = (short) (minuteInDay * perfomance);
         System.out.println("За " + inDay + " день машина произвела " + perDay + " штук бутылок");
 
-        short threeDays = 3;
+        byte threeDays = 3;
         int perThreeDays = (int) (threeDays * inDayHour * minuteInHour * perfomance);
         System.out.println("За " + threeDays + " дня машина произвела " + perThreeDays + " штук бутылок");
 
